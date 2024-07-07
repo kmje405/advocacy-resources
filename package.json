@@ -1,0 +1,13 @@
+{
+    "name": "my-nestjs-nextjs-project",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+      "dev:backend": "nodemon --config backend/nodemon.json",
+      "dev:frontend": "nodemon --config frontend/nodemon.json"
+    },
+    "devDependencies": {
+      "concurrently": "^6.2.0",
+      "nodemon": "^2.0.12"
+    }
+  }
